@@ -1,0 +1,25 @@
+import @{PACKAGE_NAME}.*
+
+buildscript {
+    repositories {
+        google()
+        mavenCentral()
+        maven { url 'https://maven.fabric.io/public' }
+        maven { url 'https://dl.bintray.com/kotlin/kotlin-eap' }
+        jcenter()
+    }
+    dependencies {
+        classpath Libs.Kotlin.gradlePlugin
+        classpath Libs.androidGradlePlugin
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+        mavenCentral()
+        jcenter()
+        maven { url 'https://jitpack.io' }
+        mavenLocal()
+    }
+}

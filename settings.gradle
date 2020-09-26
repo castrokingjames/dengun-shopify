@@ -1,0 +1,26 @@
+include ":@{PROJECT_NAME}"
+include ":di-scope"
+include ":di-module"
+include ":di-viewmodel"
+include ":ui-navigation"
+include ":ui-common"
+include ":ui-mvrx"
+include ":domain"
+include ":data"
+include ":data-local"
+include ":data-remote"
+include ":manager"
+include ":manager-android-dispatcher"
+include ":feature-user-list"
+include ":feature-user-detail"
+
+project(":di-scope").projectDir = new File("di/scope")
+project(":di-module").projectDir = new File("di/module")
+project(":ui-navigation").projectDir = new File("ui/navigation")
+project(":ui-common").projectDir = new File("ui/common")
+project(":ui-mvrx").projectDir = new File("ui/mvrx")
+project(":data-local").projectDir = new File("datasources/local")
+project(":data-remote").projectDir = new File("datasources/remote")
+project(":manager-android-dispatcher").projectDir = new File("managers/android-dispatcher")
+project(":feature-user-list").projectDir = new File("features/user-list")
+project(":feature-user-detail").projectDir = new File("features/user-detail")

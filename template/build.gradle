@@ -1,0 +1,78 @@
+import @{PACKAGE_NAME}.*
+
+apply plugin: "com.android.application"
+apply plugin: "kotlin-android"
+apply plugin: "kotlin-kapt"
+apply plugin: "kotlin-android-extensions"
+
+android {
+    compileSdkVersion Config.compile
+
+    defaultConfig {
+        applicationId = Config.applicationId
+        minSdkVersion Config.min
+        targetSdkVersion Config.target
+        versionCode = Config.versionCode
+        versionName = Config.versionName
+    }
+
+    buildTypes {
+        debug {
+            proguardFiles getDefaultProguardFile("proguard-android.txt"), "proguard-rules.pro"
+        }
+
+        release {
+            minifyEnabled = true
+            proguardFiles getDefaultProguardFile("proguard-android.txt"), "proguard-rules.pro"
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    packagingOptions {
+        pickFirst 'META-INF/kotlinx-io.kotlin_module'
+        pickFirst 'META-INF/atomicfu.kotlin_module'
+        pickFirst 'META-INF/kotlinx-coroutines-io.kotlin_module'
+    }
+    sourceSets {
+        main.java.srcDirs += "src/main/kotlin"
+        main.java.srcDirs += [file("$buildDir/generated/source/kapt/main")]
+        test.java.srcDirs += "src/test/kotlin"
+        androidTest.java.srcDirs += "src/androidTest/kotlin"
+    }
+}
+
+dependencies {
+    implementation project(":di-scope")
+    implementation project(":di-module")
+    implementation project(":ui-navigation")
+    implementation project(":ui-mvrx")
+    implementation project(":ui-common")
+    implementation project(":domain")
+    implementation project(":data")
+    implementation project(":data-local")
+    implementation project(":data-remote")
+    implementation project(":manager")
+    implementation project(":manager-android-dispatcher")
+    implementation project(":feature-user-list")
+    implementation project(":feature-user-detail")
+
+    implementation Libs.AndroidX.Navigation.fragment
+    implementation Libs.AndroidX.Navigation.ui
+
+    implementation Libs.Airbnb.mvRx
+
+    implementation Libs.AndroidX.appcompat
+
+    implementation Libs.Dagger.dagger
+    implementation Libs.Dagger.android
+    implementation Libs.Dagger.androidSupport
+    implementation Libs.AssistedInject.annotationDagger2
+
+    kapt Libs.Dagger.compiler
+    kapt Libs.Dagger.androidProcessor
+    kapt Libs.AssistedInject.processorDagger2
+}
