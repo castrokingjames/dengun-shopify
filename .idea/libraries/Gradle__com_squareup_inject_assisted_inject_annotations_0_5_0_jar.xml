@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Gradle: com.squareup.inject:assisted-inject-annotations:0.5.0@jar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.squareup.inject/assisted-inject-annotations/0.5.0/401071a426da3198a9422b18b18ec91510206042/assisted-inject-annotations-0.5.0.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.squareup.inject/assisted-inject-annotations/0.5.0/ebf5e5f937dc7f271a683ec326761de4ef3b9fbe/assisted-inject-annotations-0.5.0-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.squareup.inject/assisted-inject-annotations/0.5.0/5042bb36c9b799348c4a91f19e5934cd70d9478b/assisted-inject-annotations-0.5.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

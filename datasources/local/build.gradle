@@ -1,4 +1,4 @@
-import @{PACKAGE_NAME}.*
+import com.dengun.shopify.*
 
 apply plugin: "com.android.library"
 apply plugin: "kotlin-android"
@@ -35,5 +35,10 @@ android {
 
 dependencies {
     api project(":data")
+    implementation project(":timber")
     implementation Libs.Kotlin.stdlib
+    implementation Libs.Dagger.dagger
+    implementation Libs.AndroidX.Room.runtime
+    implementation Libs.AndroidX.Room.ktx
+    kapt Libs.AndroidX.Room.compiler
 }

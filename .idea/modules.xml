@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/data/data.iml" filepath="$PROJECT_DIR$/.idea/modules/data/data.iml" group="dengun-shopify/data" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/datasources/local/data-local.iml" filepath="$PROJECT_DIR$/.idea/modules/datasources/local/data-local.iml" group="dengun-shopify/data-local" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/datasources/remote/data-remote.iml" filepath="$PROJECT_DIR$/.idea/modules/datasources/remote/data-remote.iml" group="dengun-shopify/data-remote" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/dengun-shopify.iml" filepath="$PROJECT_DIR$/.idea/modules/dengun-shopify.iml" group="dengun-shopify" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/dengun-shopify_buildSrc.iml" filepath="$PROJECT_DIR$/.idea/modules/dengun-shopify_buildSrc.iml" group="dengun-shopify/dengun-shopify_buildSrc" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/di/module/di-module.iml" filepath="$PROJECT_DIR$/.idea/modules/di/module/di-module.iml" group="dengun-shopify/di-module" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/di/scope/di-scope.iml" filepath="$PROJECT_DIR$/.idea/modules/di/scope/di-scope.iml" group="dengun-shopify/di-scope" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/di-viewmodel/di-viewmodel.iml" filepath="$PROJECT_DIR$/.idea/modules/di-viewmodel/di-viewmodel.iml" group="dengun-shopify/di-viewmodel" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/domain/domain.iml" filepath="$PROJECT_DIR$/.idea/modules/domain/domain.iml" group="dengun-shopify/domain" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/features/product-list/feature-product-list.iml" filepath="$PROJECT_DIR$/.idea/modules/features/product-list/feature-product-list.iml" group="dengun-shopify/feature-product-list" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/features/tag-list/feature-tag-list.iml" filepath="$PROJECT_DIR$/.idea/modules/features/tag-list/feature-tag-list.iml" group="dengun-shopify/feature-tag-list" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/manager/manager.iml" filepath="$PROJECT_DIR$/.idea/modules/manager/manager.iml" group="dengun-shopify/manager" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/managers/android-dispatcher/manager-android-dispatcher.iml" filepath="$PROJECT_DIR$/.idea/modules/managers/android-dispatcher/manager-android-dispatcher.iml" group="dengun-shopify/manager-android-dispatcher" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/shopify/shopify.iml" filepath="$PROJECT_DIR$/.idea/modules/shopify/shopify.iml" group="dengun-shopify/shopify" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/timber/timber.iml" filepath="$PROJECT_DIR$/.idea/modules/timber/timber.iml" group="dengun-shopify/timber" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/ui/common/ui-common.iml" filepath="$PROJECT_DIR$/.idea/modules/ui/common/ui-common.iml" group="dengun-shopify/ui-common" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/ui/mvrx/ui-mvrx.iml" filepath="$PROJECT_DIR$/.idea/modules/ui/mvrx/ui-mvrx.iml" group="dengun-shopify/ui-mvrx" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/ui/navigation/ui-navigation.iml" filepath="$PROJECT_DIR$/.idea/modules/ui/navigation/ui-navigation.iml" group="dengun-shopify/ui-navigation" />
+    </modules>
+  </component>
+</project>

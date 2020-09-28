@@ -1,4 +1,4 @@
-include ":@{PROJECT_NAME}"
+include ":shopify"
 include ":di-scope"
 include ":di-module"
 include ":di-viewmodel"
@@ -11,8 +11,9 @@ include ":data-local"
 include ":data-remote"
 include ":manager"
 include ":manager-android-dispatcher"
-include ":feature-user-list"
-include ":feature-user-detail"
+include ":feature-tag-list"
+include ":feature-product-list"
+include ":timber"
 
 project(":di-scope").projectDir = new File("di/scope")
 project(":di-module").projectDir = new File("di/module")
@@ -22,5 +23,5 @@ project(":ui-mvrx").projectDir = new File("ui/mvrx")
 project(":data-local").projectDir = new File("datasources/local")
 project(":data-remote").projectDir = new File("datasources/remote")
 project(":manager-android-dispatcher").projectDir = new File("managers/android-dispatcher")
-project(":feature-user-list").projectDir = new File("features/user-list")
-project(":feature-user-detail").projectDir = new File("features/user-detail")
+project(":feature-tag-list").projectDir = new File("features/tag-list")
+project(":feature-product-list").projectDir = new File("features/product-list")

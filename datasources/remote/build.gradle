@@ -1,4 +1,4 @@
-import @{PACKAGE_NAME}.*
+import com.dengun.shopify.*
 
 apply plugin: "kotlin"
 
@@ -9,8 +9,10 @@ sourceSets {
 }
 
 dependencies {
-    implementation project(":data")
+    api project(":data")
+    implementation project(":timber")
     implementation Libs.Kotlin.stdlib
+    implementation Libs.Dagger.dagger
     implementation Libs.Kotlin.Coroutines.core
     implementation Libs.Retrofit.retrofit
     implementation Libs.Retrofit.gsonConverter

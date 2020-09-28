@@ -1,4 +1,4 @@
-import @{PACKAGE_NAME}.*
+import com.dengun.shopify.*
 
 apply plugin: "com.android.library"
 apply plugin: "kotlin-android"
@@ -36,4 +36,5 @@ android {
 
 dependencies {
     implementation Libs.AndroidX.appcompat
+    implementation Libs.Bumptech.glide
 }

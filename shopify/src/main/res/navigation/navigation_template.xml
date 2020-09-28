@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:startDestination="@id/tag_list">
+
+    <fragment
+        android:id="@+id/tag_list"
+        android:name="com.dengun.shopify.feature.tag.list.TagListFragment">
+
+        <action
+            android:id="@+id/navigate_to_product_list"
+            app:destination="@id/product_list"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/product_list"
+        android:name="com.dengun.shopify.feature.product.list.ProductListFragment" />
+
+</navigation>

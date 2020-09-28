@@ -1,4 +1,4 @@
-import @{PACKAGE_NAME}.*
+import com.dengun.shopify.*
 
 buildscript {
     repositories {

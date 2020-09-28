@@ -1,4 +1,4 @@
-import @{PACKAGE_NAME}.*
+import com.dengun.shopify.*
 
 apply plugin: "com.android.library"
 apply plugin: "kotlin-android"

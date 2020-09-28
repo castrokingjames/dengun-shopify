@@ -1,1 +1,0 @@
-package @{PACKAGE_NAME}.feature.user.list
